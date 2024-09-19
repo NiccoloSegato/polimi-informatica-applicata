@@ -64,8 +64,8 @@ nav ul a {
     text-align: left;
 }
 #title-container h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3em;
+    line-height: 1.2;
     margin-bottom: 10px;
 }
 #title-container h3 {
