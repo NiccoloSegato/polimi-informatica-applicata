@@ -95,6 +95,7 @@ nav ul a {
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .index-content-card-cont {
     padding: 20px;
@@ -127,4 +128,12 @@ nav ul a {
 }
 .index-content-card-cont a:hover  {
     width: 145px;
+}
+.lesson-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.lesson-date {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
