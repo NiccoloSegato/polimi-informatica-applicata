@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/index.css?v=2">
         <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-        <script src="scripts/index.js"></script>
+        <script src="scripts/popup.js"></script>
     </head>
     <body>
         <section id="home" class="hero-section">
@@ -31,7 +31,7 @@
                 <div class="index-content-card-cont">
                     <h2>Indice</h2>
                     <p>Repository di questa pagina.</p>
-                    <a href="https://github.com/NiccoloSegato/polimi-informatica-applicata" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                    <button onclick="openPopup(1)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
 
@@ -41,33 +41,57 @@
                 <div class="index-content-card-cont">
                     <h2>Introduzione a P5.JS</h2>
                     <p>Introduzione al software P5.JS e al relativo framework.</p>
-                    <a href="lessons/lesson2/p5-1/index.html" target="_blank"><i class="fa-solid fa-arrow-right"></i> Vai alla pagina</a>
-                    <a href="https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson2/p5-1" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                    <button onclick="openPopup(2)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
             <div class="index-content-card">
                 <div class="index-content-card-cont">
                     <h2>Cielo stellato</h2>
                     <p>Creazione di un cielo stellato con il software P5.JS.</p>
-                    <a href="lessons/lesson2/p5-2/index.html" target="_blank"><i class="fa-solid fa-arrow-right"></i> Vai alla pagina</a>
-                    <a href="https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson2/p5-2" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                    <button onclick="openPopup(3)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
             <div class="index-content-card">
                 <div class="index-content-card-cont">
                     <h2>Casette</h2>
                     <p>Creazione di un insieme di case con il software P5.JS.</p>
-                    <a href="lessons/lesson2/p5-3/index.html" target="_blank"><i class="fa-solid fa-arrow-right"></i> Vai alla pagina</a>
-                    <a href="https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson2/p5-3" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                    <button onclick="openPopup(4)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
             <div class="index-content-card">
                 <div class="index-content-card-cont">
                     <h2><span class="challenge-label"><i class="fa-solid fa-trophy"></i> CHALLENGE</span> - Kandinskij</h2>
                     <p>Creazione di un'illustrazione a scelta con il software P5.JS.</p>
-                    <a href="lessons/lesson2/p5-4/index.html" target="_blank"><i class="fa-solid fa-arrow-right"></i> Vai alla pagina</a>
-                    <a href="https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson2/p5-4" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                    <button onclick="openPopup(5)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
+            </div>
+
+            <h2 class="lesson-title"><i class="fa-solid fa-folder"></i> Lezione 3</h2>
+            <p class="lesson-date">08/10/2024</p>
+            <div class="index-content-card">
+                <div class="index-content-card-cont">
+                    <h2>Seguire il mouse</h2>
+                    <p>Sketch base per imparare a seguire il movimento del mouse.</p>
+                    <button onclick="openPopup(6)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
+                </div>
+            </div>
+            <div class="index-content-card">
+                <div class="index-content-card-cont">
+                    <h2>Luna sulle case</h2>
+                    <p>Impariamo a usare la funzione random.</p>
+                    <button onclick="openPopup(7)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="overlay"></div>
+        <section id="popup-details">
+            <p id="popup-close" onclick="closePopup()"><i class="fa-solid fa-times"></i></p>
+            <div id="popup-image"></div>
+            <div id="popup-text">
+                <h2 id="popup-title"></h2>
+                <p id="popup-description"></p>
+                <div id="popup-links"></div>
             </div>
         </section>
     <body>
