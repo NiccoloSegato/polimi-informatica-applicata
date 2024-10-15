@@ -112,6 +112,23 @@ const dictionary = {
                 link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson3/base-house-sketch'
             }
         }
+    },
+    '8': {
+        title: 'Transizioni',
+        description: 'In questo sketch abbiamo imparato a usare le transizioni',
+        image: 'assets/images/7.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson4/translations/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/translations'
+            }
+        }
     }
 }
 
