@@ -163,6 +163,23 @@ const dictionary = {
                 link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/basketball'
             }
         }
+    },
+    '11': {
+        title: 'Fasi lunari',
+        description: 'In questo sketch abbiamo usato la traslazione per ricreare le varie fasi del ciclo lunare, usando le funzioni.',
+        image: 'assets/images/11.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson4/drawingmoon/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/drawingmoon'
+            }
+        }
     }
 }
 
