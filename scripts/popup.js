@@ -116,17 +116,51 @@ const dictionary = {
     '8': {
         title: 'Transizioni',
         description: 'In questo sketch abbiamo imparato a usare le transizioni',
-        image: 'assets/images/7.png',
+        image: 'assets/images/8.png',
         links: {
             '1': {
                 icon: 'fa-solid fa-arrow-right',
                 label: 'Vai alla pagina',
-                link: 'lessons/lesson4/translations/index.html'
+                link: 'lessons/lesson4/traslation/index.html'
             },
             '2': {
                 icon: 'fab fa-github',
                 label: 'Repository',
-                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/translations'
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/traslation'
+            }
+        }
+    },
+    '9': {
+        title: 'Rotazioni',
+        description: 'In questo sketch abbiamo imparato a usare le rotazioni',
+        image: 'assets/images/9.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson4/rotation/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/rotation'
+            }
+        }
+    },
+    '10': {
+        title: 'Palle da basket',
+        description: 'In questo sketch abbiamo approfondito le funzioni e le rotazioni, andando a creare una funzione draw più nella possibile, delegando alle funzioni stesse',
+        image: 'assets/images/10.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson4/basketball/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/basketball'
             }
         }
     }
