@@ -114,9 +114,43 @@ const dictionary = {
         }
     },
     '8': {
+        title: 'Rettangoli generati',
+        description: 'Introduzione alla challenge con la creazione di un\'opera di arte generativa',
+        image: 'assets/images/8.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson3/generative-rects/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson3/generative-rects'
+            }
+        }
+    },
+    '9': {
+        title: '<span class="challenge-label"><i class="fa-solid fa-trophy"></i> CHALLENGE</span> - Kelly Ellsworth',
+        description: 'Creazione dell\'opera "Spectrum Colors Arranged by Chance I to VIII" di Kelly Ellsworth',
+        image: 'assets/images/9.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson3/generative-squares/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson3/generative-squares'
+            }
+        }
+    },
+    '10': {
         title: 'Transizioni',
         description: 'In questo sketch abbiamo imparato a usare le transizioni',
-        image: 'assets/images/8.png',
+        image: 'assets/images/10.png',
         links: {
             '1': {
                 icon: 'fa-solid fa-arrow-right',
@@ -130,7 +164,7 @@ const dictionary = {
             }
         }
     },
-    '9': {
+    '11': {
         title: 'Rotazioni',
         description: 'In questo sketch abbiamo imparato a usare le rotazioni',
         image: 'assets/images/9.png',
@@ -147,7 +181,7 @@ const dictionary = {
             }
         }
     },
-    '10': {
+    '12': {
         title: 'Palle da basket',
         description: 'In questo sketch abbiamo approfondito le funzioni e le rotazioni, andando a creare una funzione draw più nella possibile, delegando alle funzioni stesse',
         image: 'assets/images/10.png',
@@ -164,7 +198,7 @@ const dictionary = {
             }
         }
     },
-    '11': {
+    '13': {
         title: 'Fasi lunari',
         description: 'In questo sketch abbiamo usato la traslazione per ricreare le varie fasi del ciclo lunare, usando le funzioni.',
         image: 'assets/images/11.png',

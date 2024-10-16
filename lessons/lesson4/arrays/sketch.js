@@ -21,7 +21,7 @@ function draw() {
   background("red");
   stroke("white");
   strokeWeight(3);
-  fill("white");
+  fill(dice);
   textSize(50);
 
   text("Dice value: " + dice, 0, 300);
