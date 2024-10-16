@@ -251,6 +251,7 @@ body.no-scroll {
     flex-direction: row;
     justify-content: left;
     margin-top: 0;
+    overflow: auto;
 }
 .filter-button {
     font-family: 'Satoshi', Helvetica, sans-serif;
@@ -259,6 +260,7 @@ body.no-scroll {
     background-color: white;
     padding: 5px 15px;
     margin-right: 7px;
+    color: black;
 }
 .filter-button.selected {
     background-color: #102C53 !important;
@@ -280,5 +282,13 @@ body.no-scroll {
         max-width: 100%;
         width: 100%;
         margin-bottom: 20px;
+        text-align: center;
+    }
+    #title-container {
+        width: 90%;
+        margin: 130px auto;
+        position: static;
+        text-align: center;
+        padding: 0px 0;
     }
 }
