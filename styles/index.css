@@ -284,11 +284,21 @@ body.no-scroll {
         margin-bottom: 20px;
         text-align: center;
     }
+    #home {
+        height: auto;
+    }
+    #title-container h3 {
+        margin: 10px auto 30px auto;
+        height: 40px;
+    }
     #title-container {
         width: 90%;
-        margin: 130px auto;
+        margin: 130px auto 0 auto;
         position: static;
         text-align: center;
         padding: 0px 0;
+    }
+    #index-content {
+        padding-top: 10px;
     }
 }
