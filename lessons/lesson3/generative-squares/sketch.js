@@ -7,6 +7,8 @@ function draw() {
   background("#E7E7D2");
   let horProbability = 0.0;
   let verProbability = 0.0;
+
+  text('"Spectrum Colors Arranged by Chance I to VIII" - Kelly Ellsworth', 15, windowHeight - 15);
   
   let gridSize = 20; // Size of each square
   let rows = Math.floor(windowHeight / gridSize);

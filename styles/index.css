@@ -50,6 +50,30 @@ nav ul a {
     margin: 0 10px;
     line-height: 40px;
 }
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 4rem auto 2rem auto;
+}
+.service-card {
+    max-width: 30%;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #f0f0f0;
+    transition: transform 0.3s ease;
+    background-position: center;
+    background-size: cover;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+}
+.service-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
 .nav-links a {
     transition: border 0.1s ease-in-out;
 }
@@ -85,7 +109,7 @@ nav ul a {
     margin-bottom: 0;
 }
 #index-content-subtitle {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .index-content-card {
     width: 100%;
@@ -140,6 +164,9 @@ nav ul a {
 }
 .challenge-label {
     color: rgb(191, 105, 0);
+}
+.assignment-label {
+    color: rgb(109, 156, 0);
 }
 
 #popup-details {
@@ -219,9 +246,39 @@ body.no-scroll {
     margin-left: 11px;
 }
 
+#filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 0;
+}
+.filter-button {
+    font-family: 'Satoshi', Helvetica, sans-serif;
+    border: 2px solid #102C53;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 15px;
+    margin-right: 7px;
+}
+.filter-button.selected {
+    background-color: #102C53 !important;
+    color: white;
+}
+.filter-button:hover {
+    background-color: #f1f1f1;
+}
+
 @media screen and (max-width: 800px) {
     #popup-details {
         width: 90%;
         left: 5%;
+    }
+    .services {
+        flex-direction: column;
+    }
+    .service-card {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }

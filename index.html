@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Informatica Applicata - Politecnico di Milano</title>
         <link rel="stylesheet" href="styles/global.css">
-        <link rel="stylesheet" href="styles/index.css?v=3">
+        <link rel="stylesheet" href="styles/index.css?v=4">
         <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-        <script src="scripts/popup.js?v=3"></script>
+        <script src="scripts/popup.js?v=4"></script>
+        <script src="scripts/filters.js"></script>
     </head>
     <body>
         <section id="home" class="hero-section">
@@ -18,16 +19,38 @@
                 <h3>NICCOLÒ SEGATO</h3>
                 <h1>Informatica applicata</h1>
                 <p>Indice del corso di Informatica Applicata del prof. Conficconi nell'ambito del corso di Laboratorio di Computer Grafica per l'Information Design.</p>
-            </section>
+                <div class="services">
+                    <div class="service-card">
+                        <h3>LEZIONI</h3>
+                        <p>11 repository</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>CHALLENGES</h3>
+                        <p>1 repository</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>ASSIGNMENTS</h3>
+                        <p>1 repository</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="index-content">
             <h2 id="index-content-title">Indice</h2>
             <p id="index-content-subtitle">Elenco dei progetti creati nell'ambito del corso.</p>
 
+            <div id="filters">
+                <i class="fa-solid fa-filter"></i>
+                <button class="filter-button selected" onclick="filterLessons(this, 'all')">Tutto</button>
+                <button class="filter-button" onclick="filterLessons(this, 'lessons')">Lezioni</button>
+                <button class="filter-button" onclick="filterLessons(this, 'challenges')">Challenge</button>
+                <button class="filter-button" onclick="filterLessons(this, 'assignments')">Assignment</button>
+            </div>
+
             <h2 class="lesson-title"><i class="fa-solid fa-folder"></i> Lezione 1</h2>
             <p class="lesson-date">17/09/2024</p>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Indice</h2>
                     <p>Repository di questa pagina.</p>
@@ -37,28 +60,28 @@
 
             <h2 class="lesson-title"><i class="fa-solid fa-folder"></i> Lezione 2</h2>
             <p class="lesson-date">01/10/2024</p>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Introduzione a P5.JS</h2>
                     <p>Introduzione al software P5.JS e al relativo framework.</p>
                     <button onclick="openPopup(2)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Cielo stellato</h2>
                     <p>Creazione di un cielo stellato con il software P5.JS.</p>
                     <button onclick="openPopup(3)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Casette</h2>
                     <p>Creazione di un insieme di case con il software P5.JS.</p>
                     <button onclick="openPopup(4)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card challenges">
                 <div class="index-content-card-cont">
                     <h2><span class="challenge-label"><i class="fa-solid fa-trophy"></i> CHALLENGE</span> - Kandinskij</h2>
                     <p>Creazione di un'illustrazione a scelta con il software P5.JS.</p>
@@ -68,30 +91,30 @@
 
             <h2 class="lesson-title"><i class="fa-solid fa-folder"></i> Lezione 3</h2>
             <p class="lesson-date">08/10/2024</p>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Seguire il mouse</h2>
                     <p>Sketch base per imparare a seguire il movimento del mouse.</p>
                     <button onclick="openPopup(6)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Luna sulle case</h2>
                     <p>Impariamo a usare la funzione random.</p>
                     <button onclick="openPopup(7)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Rettangoli generati</h2>
                     <p>Introduzione alla challenge con la creazione di un'opera di arte generativa.</p>
                     <button onclick="openPopup(8)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card assignments">
                 <div class="index-content-card-cont">
-                    <h2><span class="challenge-label"><i class="fa-solid fa-trophy"></i> CHALLENGE</span> - Kelly Ellsworth</h2>
+                    <h2><span class="assignment-label"><i class="fa-solid fa-award"></i> ASSIGNMENT</span> - Kelly Ellsworth</h2>
                     <p>Creazione dell'opera "Spectrum Colors Arranged by Chance I to VIII" di Kelly Ellsworth.</p>
                     <button onclick="openPopup(9)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
@@ -99,28 +122,28 @@
 
             <h2 class="lesson-title"><i class="fa-solid fa-folder"></i> Lezione 4</h2>
             <p class="lesson-date">15/10/2024</p>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Transizioni</h2>
                     <p>Sketch base per imparare a usare le transizioni.</p>
                     <button onclick="openPopup(10)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Rotazioni</h2>
                     <p>Sketch base per imparare a usare le rotazioni.</p>
                     <button onclick="openPopup(11)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Palle da basket</h2>
                     <p>Sketch per la creazione di due palle da basket che ruotano usando le funzioni.</p>
                     <button onclick="openPopup(12)"><i class="fa-solid fa-arrow-right"></i> Scopri di più</button>
                 </div>
             </div>
-            <div class="index-content-card">
+            <div class="index-content-card lessons">
                 <div class="index-content-card-cont">
                     <h2>Fasi lunari</h2>
                     <p>Sketch per l'utilizzo della transizione per creare le diverse fasi del ciclo lunare.</p>
