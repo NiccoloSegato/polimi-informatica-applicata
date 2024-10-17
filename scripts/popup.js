@@ -167,7 +167,7 @@ const dictionary = {
     '11': {
         title: 'Rotazioni',
         description: 'In questo sketch abbiamo imparato a usare le rotazioni',
-        image: 'assets/images/9.png',
+        image: 'assets/images/11.png',
         links: {
             '1': {
                 icon: 'fa-solid fa-arrow-right',
@@ -184,7 +184,7 @@ const dictionary = {
     '12': {
         title: 'Palle da basket',
         description: 'In questo sketch abbiamo approfondito le funzioni e le rotazioni, andando a creare una funzione draw più nella possibile, delegando alle funzioni stesse',
-        image: 'assets/images/10.png',
+        image: 'assets/images/12.png',
         links: {
             '1': {
                 icon: 'fa-solid fa-arrow-right',
@@ -201,7 +201,7 @@ const dictionary = {
     '13': {
         title: 'Fasi lunari',
         description: 'In questo sketch abbiamo usato la traslazione per ricreare le varie fasi del ciclo lunare, usando le funzioni.',
-        image: 'assets/images/11.png',
+        image: 'assets/images/13.png',
         links: {
             '1': {
                 icon: 'fa-solid fa-arrow-right',
@@ -212,6 +212,23 @@ const dictionary = {
                 icon: 'fab fa-github',
                 label: 'Repository',
                 link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/drawingmoon'
+            }
+        }
+    },
+    '14': {
+        title: '<span class="challenge-label"><i class="fa-solid fa-trophy"></i> CHALLENGE</span> - Glifi generativi',
+        description: 'Creazione di un\'opera generativa che rappresenta glifi a forma di asterischi con linee di diverse inclinazione e colori.',
+        image: 'assets/images/14.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson4/glyphs/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/glyphs'
             }
         }
     }
