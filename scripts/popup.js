@@ -216,7 +216,7 @@ const dictionary = {
         }
     },
     '14': {
-        title: '<span class="challenge-label"><i class="fa-solid fa-trophy"></i> CHALLENGE</span> - Glifi generativi',
+        title: '<span class="challenge-label"><i class="fa-solid fa-trophy"></i> ASSIGNMENT</span> - Glifi generativi',
         description: 'Creazione di un\'opera generativa che rappresenta glifi a forma di asterischi con linee di diverse inclinazione e colori.',
         image: 'assets/images/14.png',
         links: {
@@ -229,6 +229,23 @@ const dictionary = {
                 icon: 'fab fa-github',
                 label: 'Repository',
                 link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson4/glyphs'
+            }
+        }
+    },
+    '15': {
+        title: '<span class="challenge-label"><i class="fa-solid fa-trophy"></i> CHALLENGE</span> - Sasso, carta, forbici',
+        description: 'Creazione del gioco "Sasso, carta, forbici" con il software P5.JS.',
+        image: 'assets/images/15.png',
+        links: {
+            '1': {
+                icon: 'fa-solid fa-arrow-right',
+                label: 'Vai alla pagina',
+                link: 'lessons/lesson3/sassocartaforbice/index.html'
+            },
+            '2': {
+                icon: 'fab fa-github',
+                label: 'Repository',
+                link: 'https://github.com/NiccoloSegato/polimi-informatica-applicata/tree/main/lessons/lesson3/sassocartaforbice'
             }
         }
     }
