@@ -27,13 +27,13 @@ function draw() {
   background(220);
   noStroke();
 
-  let hoveredRiverIndex = floor(floor(mouseX / columnWidth) / 5);
+  let hoveredRiverIndex = floor((mouseX - 10) / (columnWidth + 5));
   let hoveredRiver = riversData[hoveredRiverIndex] ?? riversData[0];
 
   // Title
   textSize(15);
   fill("black");
-  textStyle(NORMAL);
+  textStyle(BOLD);
   text("RIVERS", 20, 30);
 
   // River name
@@ -49,13 +49,14 @@ function draw() {
   text("Length: " + hoveredRiver.length + " km", 20, 110);
   textSize(15);
 
-  text("Hovered Index = " + hoveredRiverIndex, 20, 170);
-
-  // River temperatures
-  text("Temperature: " + hoveredRiver.min_temp + "°C - " + hoveredRiver.max_temp + "°C", 20, 150);
+  // River countries
+  text("Continent: " + hoveredRiver.continent, 20, 130);
 
   // River countries
-  text("Countries: " + hoveredRiver.countries, 20, 130);
+  text("Countries: " + hoveredRiver.countries, 20, 150);
+
+  // River temperatures
+  text("Temperature: " + hoveredRiver.min_temp + "°C - " + hoveredRiver.max_temp + "°C", 20, 170);
 
   for(let i = 0; i < datasetLength; i++) {
     let row = riversData[i];
@@ -78,7 +79,7 @@ function drawColumn(x, data) {
 
 function fillHoveredColumn(hoveredRiver) {
   mappedLength = map(hoveredRiver.length, 60, 6700, 10, highestLength);
-  let hoveredIndex = floor(floor(mouseX / columnWidth) / 2);
+  let hoveredIndex = floor((mouseX - 10) / (columnWidth + 5));
   fill("#FC6900");
   if(hoveredIndex >= 0 && hoveredIndex < datasetLength) {
     rect(10 + (hoveredIndex * columnWidth) + 5 * hoveredIndex, windowHeight, columnWidth, -mappedLength);
